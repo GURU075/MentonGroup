@@ -1,10 +1,48 @@
 // src/components/layout/Footer.jsx
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import logoo from '../../assets/logoo.png'; // Adjust the path as necessary
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const companies = [
+    {
+      id: 'mentone-concrete',
+      name: 'Mentone Concrete',
+      website: 'https://mentoneconcrete.com'
+    },
+    {
+      id: 'mentone-aluform', 
+      name: 'Mentone Aluform',
+      website: 'https://mentonealuform.com'
+    },
+    {
+      id: 'mentone-surgical',
+      name: 'Mentone Surgical', 
+      website: 'https://mentonesurgical.com'
+    },
+    {
+      id: 'jeaplast',
+      name: 'Jeaplast',
+      website: 'https://jeaplast.com'
+    },
+    {
+      id: 'oriflame-studio',
+      name: 'Oriflame Studio',
+      website: 'https://oriflamestudio.com'
+    },
+    {
+      id: 'pgpawar-foundation',
+      name: 'PGP Awar Foundation',
+      website: 'https://pgpawarfoundation.com'
+    },
+    {
+      id: 'job-buzzer',
+      name: 'Job Buzzer',
+      website: 'https://jobbuzzer.in'
+    }
+  ];
 
   return (
     <footer className="bg-dark text-white">
@@ -39,36 +77,20 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Our Companies</h3>
             <ul className="space-y-2">
-              <li>
-                <Link to="/company/mentone-concrete" className="text-gray-400 hover:text-white transition-colors">
-                  Mentone Concrete
-                </Link>
-              </li>
-              <li>
-                <Link to="/company/mentone-aluform" className="text-gray-400 hover:text-white transition-colors">
-                  Mentone Aluform
-                </Link>
-              </li>
-              <li>
-                <Link to="/company/mentone-surgical" className="text-gray-400 hover:text-white transition-colors">
-                  Mentone Surgical
-                </Link>
-              </li>
-              <li>
-                <Link to="/company/jeaplast" className="text-gray-400 hover:text-white transition-colors">
-                  Jeaplast
-                </Link>
-              </li>
-              <li>
-                <Link to="/company/oriflame-studio" className="text-gray-400 hover:text-white transition-colors">
-                  Oriflame Studio
-                </Link>
-              </li>
-              <li>
-                <Link to="/company/pgp-awar-foundation" className="text-gray-400 hover:text-white transition-colors">
-                  PGP Awar Foundation
-                </Link>
-              </li>
+              {companies.map((company) => (
+                <li key={company.id}>
+                  <a 
+                    href={company.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center justify-between group"
+                    title={`Visit ${company.name} website`}
+                  >
+                    <span>{company.name}</span>
+                    <FaExternalLinkAlt className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -90,8 +112,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-         
         </div>
 
         <div className="mt-12 pt-6 border-t border-gray-800 text-center">

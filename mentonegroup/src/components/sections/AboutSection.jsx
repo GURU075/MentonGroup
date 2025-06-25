@@ -40,6 +40,10 @@ const AboutSection = () => {
     }
   ];
 
+    const handleRedirect = () => {
+    window.location.href = '/company';
+  };
+
   return (
     <section className="section pt-0">
       {/* Hero Section */}
@@ -142,7 +146,7 @@ const AboutSection = () => {
     isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
   }`}
             >
-              <button className="group bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/30 transform hover:-translate-y-1 flex items-center gap-3">
+              <button onClick={handleRedirect} className="group bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/30 transform hover:-translate-y-1 flex items-center gap-3">
                 Discover Our Universe of Companies
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
