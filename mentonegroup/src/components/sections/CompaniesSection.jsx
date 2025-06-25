@@ -135,7 +135,7 @@ const CompaniesSection = ({ showAll = false, featured = true }) => {
     : companiesData; // Show all companies since none have 'featured' property defined
 
   return (
-    <section className="section bg-gray-50">
+    <section className="section bg-gray-50 pt-4">
       <div className="container">
         {/* Header Section */}
         <motion.div 
