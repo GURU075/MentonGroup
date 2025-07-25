@@ -1,3 +1,8 @@
+import l1 from '../assets/l1.png';
+import l2 from '../assets/l2.png';
+import l4 from '../assets/l4.png';
+// import l3 from '../assets/lle3.png';
+
 export const companiesData = [
   { 
     id: 'mentone-concrete',  
@@ -187,7 +192,7 @@ export const teamData = [
     position: "Directors",
     bio: "Mr. Prashant Pawar, the visionary behind Mentone Aluform, is a testament to the power of perseverance and dedication. Coming from a humble middle-class background, he built his success through sheer hard work and an unwavering commitment to excellence.",
     subBio: "His journey inspires many, proving that success is not given but earned through determination, passion, and an unrelenting pursuit of excellence.",
-    image: "https://www.mentonealuform.com/assets/images/testimonials/man.png",
+    image: l1,
     expertise: ["Strategic Planning", "Innovation", "Leadership"]
   },
   {
@@ -203,7 +208,7 @@ export const teamData = [
     position: "A Leader Driven by Excellence and Integrity ",
     bio: "As the Co-Director of Mentone Aluform, Sanjay Shinde embodies dedication, integrity, and a strong commitment to quality in the construction and infrastructure industry.",
     subBio: "At Mentone Aluform, he upholds the values of transparency, accountability, and customer satisfaction.",
-    image: "https://www.mentonealuform.com/assets/images/testimonials/man.png",
+    image: l2,
     expertise: ["Quality Management", "Infrastructure", "Customer Relations"]
   },
   {
@@ -211,7 +216,7 @@ export const teamData = [
     position: "A Leader Committed to Excellence and Innovation",
     bio: "With 28 years of experience in the construction industry, Mr. Vikas Salunkhe has been instrumental in delivering over 20 large-scale, high-impact projects. His extensive expertise in construction methodologies and advanced technologies has established him as a trusted and respected name in the field.",
     subBio:"His presence strengthens Mentone Aluform’s mission to deliver superior and reliable construction solutions.",
-    image: "https://www.mentonealuform.com/assets/images/testimonials/man.png",
+    image: l4,
     expertise: ["Construction Management", "Project Delivery", "Advanced Technologies"]
   }
 ];
