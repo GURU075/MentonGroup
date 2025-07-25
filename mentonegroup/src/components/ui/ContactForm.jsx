@@ -184,7 +184,7 @@ const ContactForm = ({ companyId = null }) => {
         <Button
           type="submit"
           variant="primary"
-          className="w-full md:w-auto"
+          className="w-full md:w-auto bg-blue-900 hover:bg-blue-700 text-white"
           disabled={isSubmitting}
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
