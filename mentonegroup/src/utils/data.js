@@ -195,14 +195,14 @@ export const teamData = [
     image: l1,
     expertise: ["Strategic Planning", "Innovation", "Leadership"]
   },
-  {
-    name: "Tanaji Babar",
-    position: "A Visionary Leader in the Industrial Sector",
-    bio: "He is a highly esteemed industrialist based in Pune, bringing over 35 years of profound expertise in engineering, aluminium foundry, and workshop management.",
-    subBio: "With a vision to contribute to the growth of the manufacturing sector, he remains an inspiration for aspiring entrepreneurs and industry professionals alike. ",
-    image: "https://www.mentonealuform.com/assets/images/testimonials/man.png",
-    expertise: ["Engineering", "Aluminium Foundry", "Workshop Management"]
-  },
+  // {
+  //   name: "Tanaji Babar",
+  //   position: "A Visionary Leader in the Industrial Sector",
+  //   bio: "He is a highly esteemed industrialist based in Pune, bringing over 35 years of profound expertise in engineering, aluminium foundry, and workshop management.",
+  //   subBio: "With a vision to contribute to the growth of the manufacturing sector, he remains an inspiration for aspiring entrepreneurs and industry professionals alike. ",
+  //   image: "https://www.mentonealuform.com/assets/images/testimonials/man.png",
+  //   expertise: ["Engineering", "Aluminium Foundry", "Workshop Management"]
+  // },
   {
     name: "Sanjay Shinde",
     position: "A Leader Driven by Excellence and Integrity ",
