@@ -1,6 +1,9 @@
-import l1 from '../assets/l1.png';
-import l2 from '../assets/l2.png';
-import l4 from '../assets/l4.png';
+import l1 from '../assets/l1.jpg';
+import l2 from '../assets/l2.jpg';
+import l4 from '../assets/l4.jpg';
+// import l1 from '../assets/l1.png';
+// import l2 from '../assets/l2.png';
+// import l4 from '../assets/l4.png';
 // import l3 from '../assets/lle3.png';
 
 export const companiesData = [

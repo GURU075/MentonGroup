@@ -248,17 +248,20 @@ const AboutSection = () => {
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
-                  {/* Gradient overlay on hover */}
+                
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 
-                  {/* Profile Image */}
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden rounded-xl">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-72 object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-96 object-cover object-top transition-transform duration-700 group-hover:scale-110 rounded-xl"
+                      style={{
+                        objectPosition: 'center 20%',
+                        transform: 'scale(0.95)',
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
                   </div>
 
                   {/* Content */}
